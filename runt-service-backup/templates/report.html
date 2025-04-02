@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            gap: 10px;
+            width: 100%;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .vehicle-photo {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .plate-photo {
+            width: 85%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>SECRETARÍA DE MOVILIDAD Y TRANSPORTE DEL VALLE DEL CAUCA</p>
+            <p>Notificación de Infracción de Tránsito</p>
+        </div>
+        
+        <div class="content">
+            <p>Señor (a): <strong>MANUEL FERMIN GIRALDO GUTIERREZ</strong></p>
+            <p>Dirección: CL 49 E NRO 83 A 196 APT 1501 UND SOL NACIENTE BARRIO CALAZANS</p>
+            <p>Ciudad: MEDELLIN</p>
+            <p><strong>Asunto:</strong> Infracción a las normas de tránsito / Orden de Comparendo N°: 76113001000049293498</p>
+            <p>Cordial saludo, señor MANUEL FERMIN GIRALDO GUTIERREZ,</p>
+            <p>
+                De conformidad con lo establecido en el artículo 8 de la Ley 1843 de 2017 y en el artículo 10 de la Ley 2161 de 2021, la SECRETARÍA DE MOVILIDAD Y TRANSPORTE DEL VALLE DEL CAUCA le está notificando que, con base en la prueba tecnológica recaudada por un sistema automático y semiautomático para la detección de infracciones de tránsito (SAST) que se adjunta, le fue impuesta la orden de comparendo anotada en el Asunto, por infracción de tránsito con código C29, consistente en "Conducir un vehículo a velocidad superior a la máxima permitida.", que tiene como sanción pecuniaria una multa por valor de 15 smldv, equivalentes a la suma de $603928.
+            </p>
+            <p>
+                Así mismo se le informa que la orden de comparendo anexa al presente documento constituye una notificación directa del inicio de un proceso contravencional iniciado, respecto del cual usted puede ejercer su derecho de defensa en calidad de propietario del vehículo relacionado en la infracción, en los términos y condiciones establecidos en la Sentencia C-321 de 2022 de la H. Corte Constitucional.
+            </p>
+            <p>
+                Por lo anterior, de conformidad con lo previsto en el Artículo 136 del C.N.T., modificado por el Artículo 24 de la Ley 1383 de 2010 y por el Artículo 205 del Decreto Ley 019 de 2012, le manifestamos que cuenta con las siguientes opciones:
+            </p>
+            <ul>
+                <li>Aceptar la comisión de la infracción y hacer uso de los beneficios por pronto pago previstos en las normas citadas y que consisten en: Cancelación del 50% del valor de la multa si paga dentro de los siguientes once (11) días a la fecha de notificación de la orden de comparendo del asunto, o cancelación del 75% del valor de la multa si paga dentro de los veinticinco (25) días siguientes a la fecha de notificación. En ambos casos y dentro de los términos anotados, realizar un curso sobre normas de tránsito en la sede operativa de BUGALAGRANDE de este Organismo de Tránsito del Departamento o en un centro integral autorizado.</li>
+                <li>Presentar objeción a la orden de comparendo en Audiencia Pública, en la sede operativa de BUGALAGRANDE personalmente o asistido por apoderado abogado, dentro de los 11 días siguientes a la presente notificación de la orden de comparendo. En esta audiencia tendrá derecho a solicitar y aportar las pruebas que pretenda hacer valer en su defensa.</li>
+            </ul>
+            <p>
+                Si no se recibe el pago con descuento en los plazos anotados, ni se objeta la infracción indicada en la orden de comparendo que se notifica, el organismo de tránsito procederá a declararlo responsable contravencionalmente, imponiéndole el pago de la multa determinada para la infracción como lo señala la sentencia C-321 de 2021 de la H. Corte Constitucional, mediante decisión que se producirá en Audiencia Pública y se notificará en estrados conforme al Artículo 139 de la Ley 769 de 2002. En ese caso deberá cancelar el 100% del valor determinado para la infracción, así como los intereses moratorios que se causen a partir de ese momento.
+            </p>
+        </div>
+        
+        <div class="image-container">
+            <img src="{{ item.image1_base64 }}" alt="Foto del vehículo" class="vehicle-photo">
+            <img src="{{ item.image2_base64 }}" alt="Foto de la placa" class="plate-photo">
+        </div>
+
+        <div class="footer">
+            <p>Para más información, visite <a href="http://www.simit.org.co">www.simit.org.co</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+requests
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+pycryptodome  # Para el manejo de RSA 
+httpx==0.25.0
+jinja2
+weasyprint 

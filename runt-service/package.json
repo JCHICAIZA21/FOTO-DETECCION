@@ -1,0 +1,7 @@
+{
+  "name": "runt-service",
+  "version": "1.0.0",
+  "dependencies": {
+    "jsrsasign": "^10.9.0"
+  }
+} 
