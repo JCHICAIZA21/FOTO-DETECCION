@@ -388,7 +388,7 @@ def create_event(
     """
     Crea un nuevo evento en la base de datos
     """
-    # Obtener el vehículo asociado a la placa
+    # Obtener el vehículo asociado a la placa.
     vehicle = db.query(VehicleInfo).filter(VehicleInfo.plate == plate).first()
     if not vehicle:
         # Si no existe el vehículo, crear uno nuevo
